@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@id/navigation_movies">
+    <fragment
+        android:id="@+id/navigation_movies"
+        android:name="com.azhara.jetpackdicodingsubmission3.ui.movie.MoviesFragment"
+        android:label="Top Rating Movies"
+        tools:layout="@layout/fragment_movies" />
+    <fragment
+        android:id="@+id/navigation_favorite"
+        android:name="com.azhara.jetpackdicodingsubmission3.ui.favorite.FavoriteFragment"
+        android:label="Favorite"
+        tools:layout="@layout/fragment_favorite" />
+    <fragment
+        android:id="@+id/navigation_tvshow"
+        android:name="com.azhara.jetpackdicodingsubmission3.ui.tvshow.TvShowFragment"
+        android:label="Top Rating Tv Show"
+        tools:layout="@layout/fragment_tv_show" />
+</navigation>
